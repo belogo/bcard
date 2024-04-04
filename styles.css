@@ -1,0 +1,80 @@
+h1, h2, h3, h4, p, a{
+    margin: 0; padding: 0;
+}
+
+
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    border-radius: 100%;
+    border: 2px solid #1f363d;
+    filter: contrast(1.2) sepia(30%);
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #40798c;
+    border-radius: 1em;
+    border-left: 9px solid #40798C;
+    box-shadow: 0 0 6px 4px #CCC;
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+.owner-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+.owner-name{
+    background-color: #cfe0c3;
+    padding: 6px 10px;
+    border-radius: 1em;
+    color: #1f363d;
+}
+
+.owner-name:hover{
+    color: #cfe0c3;
+    background-color:#1f363d;
+}
+
+.owner-email{
+    font-weight: bold;
+    color: #1f363d;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+}
+
+.owner-email:hover{
+    transform: scale(1.1);
+    transition: .2s ease;
+    text-decoration-color: #9EC1A3;
+    text-decoration-thickness: 4px;
+}
+
+.owner-position{
+    font-weight: bold;
+    color: #40798c;
+}
+
+.owner-position::before{
+    content: "Web Developer";
+}
+
+.owner-position:hover::before{
+    content: "Hire me at ⬇";
+}
